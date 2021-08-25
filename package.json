@@ -16,12 +16,12 @@
     "mongod": "^2.0.0",
     "mongodb": "^3.5.9",
     "node-fetch": "^2.6.1",
-    "node-server-screenshot": "^0.2.4",
     "pm2": "^4.4.0",
     "simple-youtube-api": "^5.2.1",
     "snoowrap": "^1.21.0",
     "translate": "^1.1.2",
     "twitter-lite": "^0.13.0",
+    "webshot": "^0.18.0",
     "ytdl-core": "^2.1.7"
   },
   "devDependencies": {},
