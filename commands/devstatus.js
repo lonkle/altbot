@@ -9,7 +9,7 @@ module.exports = {
 	execute(message, args) {
 		message.channel.send("Fetching status... <a:loading:718190657579253782>")
 			.then(msg => {
-				webshot.fromURL("https://developer.apple.com/system-status/", "dstatus.jpeg", { screenSize: { width: 1920, height: 1080 }, { shotSize: { width: 984, height: 708 }, shotOffset: { left: 467, top: 98 } } }, function () {
+				webshot("https://developer.apple.com/system-status/", "dstatus.jpeg", { screenSize: { width: 1920, height: 1080 }, shotSize: { width: 984, height: 708 }, shotOffset: { left: 467, top: 98 } }, function () {
 					msg.edit("https://developer.apple.com/system-status/");
 					message.channel.send({ files: ["dstatus.jpeg"] });
 					setTimeout(() => {
